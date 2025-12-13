@@ -12,18 +12,14 @@
 var containsDuplicate = function(nums) {
     var i = 0;
     var twice = false;
-    const num_len = nums.length;
+    var num_list = nums.sort();
+    const num_len = num_list.length;
 
-    while (i < num_len && twice == false){
-        var y = i + 1;
-        while(y < num_len && twice == false){
-            if(nums[i] == nums[y]) {
-                twice = true;
-            } else {
-                y += 1;
-            }
+    for (i; i<num_len; i++){
+        if(num_list[i] == num_list[i+1]){
+            twice = true;
+            break;
         }
-        i += 1;
     }
     return twice;
     
