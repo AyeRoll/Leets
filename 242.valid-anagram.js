@@ -11,11 +11,9 @@
  * @return {boolean}
  */
 var isAnagram = function(s, t) {
-//    const s_len = s.length;
    var s_list = s.split('');
    s_list.sort();
    const s_sort = s_list.join();
-//    const t_len = t.length;
    var t_list = t.split('');
    t_list.sort();
    const t_sort = t_list.join();
