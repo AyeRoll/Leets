@@ -44,22 +44,9 @@ var topKFrequent = function(nums, k) {
             }
         }
     }
-        
-        // if(nums[i] === nums[i+1]){
-            
-        // }
-
-        // if (current !== -1){
-        //     current[1]++;
-        // } else {
-        //     freq.push([nums[i], 1]);
-        // }
-    
     freq.sort();
-    // const final = [];
     return ks;
 
 };
 // @lc code=end
-//console.log(topKFrequent([5,2,5,3,5,3,1,1,3], 2));
 
